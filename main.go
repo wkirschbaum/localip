@@ -4,7 +4,7 @@ import (
 	"net"
 )
 
-func getLocalIP(fallback string) string {
+func GetLocalIP(fallback string) string {
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
 		return fallback
